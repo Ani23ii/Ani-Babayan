@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div id="grades">
+      <h1>CSE 120 </h1>
+      <h2>Ani Babayan </h2>
+      <h4>Grade percentages</h4>
+      <ul style="list-style-type:disc;">
+        <li>Participation Percent-<span 
+        id="ParticipationPercent">10</span>%</li>
+        <li>Homework Percent-<span 
+        id="HWPercent">10</span>%</li>
+        <li>Project Milestone 1 Percent-<span 
+        id="PM1Percent"> 20</span>%</li>
+        <li>Project Milestone 2 Percent-<span 
+        id="PM2Percent"> 30</span>%</li>
+        <li>Project Milestone 3 Percent-<span 
+        id="PM3Percent"> 30</span>%</li>
+      </ul>
+      <h4>Grades that I have received</h4>
+      <ul style="list-style-type:disc;">
+        <li>Participation-<input type="text"
+        id="ParticipationGrade"></li>
+        <li>Homework-<input type="text"
+        id="HWGrade"></li>
+        <li>Project Milestone 1-<input type="text"
+        id="PM1Grade"></li>
+        <li>Project Milestone 2-<input type="text"
+        id="PM2Grade"></li>
+        <li>Project Milestone 3-<input type="text"
+        id="PM3Grade"></li>
+      </ul>
+      <button onclick="calculateGrade()">Calculate my Current Grade </button>
+      <h4>My Current Grade is <span id=currentGrade>...</span></h4>
+    </div>
+
+    
+  </body>
+</html>
+
+
