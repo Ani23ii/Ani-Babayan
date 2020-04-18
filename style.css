@@ -3,14 +3,28 @@ body {
   color:antiquewhite
 }
 
+h1,h2,h4{
+ padding-left: 60px
+}
 
-h1 {
-  text-align: center;
+
+
+ul{
+  line-height: 25px;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 80px;
+   }
+
+
+li input:hover{
+  background-color: bisque;
+  cursor:pointer
 }
-h2{
-  text-align: center
-}
-h4{
-  text-align: center
+
+body:hover{
+  cursor:default
+ 
 }
 
