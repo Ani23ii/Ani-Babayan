@@ -22,7 +22,17 @@ function calculateGrade(){
   var currentGrade=Participation+HW+PM1+PM2+PM3
   console.log(currentGrade)
 
-
   document.getElementById("currentGrade").innerHTML=currentGrade
+}
+
+function CheckGrade(evt){
+  var grade=parseFloat(evt.currentTarget.value);
+
+  if(grade>100 || grade<0){
+    console.log("Wrong Value")
+    evt.currentTarget.style.color="red"
+  }else{
+    evt.currentTarget.style.color="black"
+  }
 }
 
