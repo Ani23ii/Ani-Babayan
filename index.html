@@ -26,16 +26,16 @@
       </ul>
       <h4>Grades that I have received</h4>
       <ul style="list-style-type:disc;">
-        <li>Participation-<input type="text"
-        id="ParticipationGrade"></li>
-        <li>Homework-<input type="text"
-        id="HWGrade"></li>
-        <li>Project Milestone 1-<input type="text"
-        id="PM1Grade"></li>
-        <li>Project Milestone 2-<input type="text"
-        id="PM2Grade"></li>
-        <li>Project Milestone 3-<input type="text"
-        id="PM3Grade"></li>
+        <li>Participation-<input type="number"
+        id="ParticipationGrade" onkeyup="CheckGrade(event)"></li>
+        <li>Homework-<input type="number"
+        id="HWGrade" onkeyup="CheckGrade(event)"></li>
+        <li>Project Milestone 1-<input type="number"
+        id="PM1Grade" onkeyup="CheckGrade(event)"></li>
+        <li>Project Milestone 2-<input type="number"
+        id="PM2Grade" onkeyup="CheckGrade(event)"></li>
+        <li>Project Milestone 3-<input type="number"
+        id="PM3Grade" onkeyup="CheckGrade(event)"></li>
       </ul>
       <button onclick="calculateGrade()">Calculate my Current Grade </button>
       <h4>My Current Grade is <span id=currentGrade>...</span></h4>
@@ -44,5 +44,4 @@
     
   </body>
 </html>
-
 
